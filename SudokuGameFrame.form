@@ -71,14 +71,14 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jButton104" min="-2" pref="107" max="-2" attributes="0"/>
+                                      <Component id="reset" min="-2" pref="107" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jButton101" min="-2" pref="130" max="-2" attributes="0"/>
+                                      <Component id="solution" min="-2" pref="130" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jButton103" min="-2" pref="107" max="-2" attributes="0"/>
+                                      <Component id="exit" min="-2" pref="107" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jButton100" min="-2" pref="130" max="-2" attributes="0"/>
+                                      <Component id="check" min="-2" pref="130" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -131,13 +131,13 @@
               </Group>
               <EmptySpace pref="12" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton104" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                  <Component id="jButton101" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="reset" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="solution" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton103" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                  <Component id="jButton100" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="exit" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="check" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
           </Group>
@@ -1543,7 +1543,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="selection9ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton100">
+    <Component class="javax.swing.JButton" name="check">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="ff" red="cc" type="rgb"/>
@@ -1554,10 +1554,10 @@
         <Property name="text" type="java.lang.String" value="Check Move"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton100ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton101">
+    <Component class="javax.swing.JButton" name="solution">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="ff" red="cc" type="rgb"/>
@@ -1568,10 +1568,10 @@
         <Property name="text" type="java.lang.String" value="Show Solution"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton101ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="solutionActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton103">
+    <Component class="javax.swing.JButton" name="exit">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="0" red="cc" type="rgb"/>
@@ -1584,8 +1584,11 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Exit"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exitActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton104">
+    <Component class="javax.swing.JButton" name="reset">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="99" red="99" type="rgb"/>
@@ -1598,6 +1601,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Reset"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="resetActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
